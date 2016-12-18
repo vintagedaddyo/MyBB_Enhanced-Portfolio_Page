@@ -1,0 +1,365 @@
+<!--
+/**
+*
+* MyBB 1.8 Modern Portfolio
+* folio template
+* Tutorial by: vintagedaddyo
+* https://community.mybb.com/user-6029.html
+*
+*/
+-->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<title>{$mybb->settings['bbname']} - Portfolio</title>
+{$headerinclude}
+<meta charset="utf-8">
+<meta name="description" content="">
+<!-- Mobile Specific Metas
+ ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--  Custom Fonts
+      ================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Lobster|PT+Sans+Narrow:400,700|PT+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+<!-- Contact
+ ================================================== -->
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/contact/contact.css" />
+<script type='text/javascript' src='{$mybb->asset_url}/folio/contact/scripts/gen_validatorv31.js'></script>
+<script type='text/javascript' src='{$mybb->asset_url}/folio/contact/scripts/fg_captcha_validator.js'></script>
+<!-- CSS
+ ================================================== -->
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/base.css">
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/skeleton.css">
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/layout.css">
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/style.css">
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/flexslider.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/quicksand-style.css"/>
+<link rel="stylesheet" type="text/css" href="{$mybb->asset_url}/folio/css/prettyPhoto.css"/>
+<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+{$headerinclude}
+</head>
+<body id="folio">
+{$header}
+<div id="banner" class="columns sixteen container">
+ <div class="columns two profile alpha">
+   <!-- Start - Profile Image -->
+   <a href="#"> <img class="profie-image" alt="john doe" src="{$mybb->asset_url}/folio/images/headshot.png" width="100" height="100" /> </a>
+   <!-- End - Profile Image -->
+ </div>
+ <div class="columns four siteinfo">
+   <!-- Start - Siteinfo -->
+   <h1><a href="#">John Doe</a></h1>
+   <h3>Web Developer</h3>
+   <!-- End - Siteinfo -->
+ </div>
+</div>
+<div class="columns sixteen container menu">
+ <!-- Start - Main Menu -->
+ <ul id="main-menu" class="tabs">
+   <li><a id="home-t"  class="active" href="#home">Home</a></li>
+   <li><a id="portfolio-t" href="#portfolio">Portfolio</a></li>
+   <li><a id="skills-experience-t" href="#skills-experience">Skills &amp; Experience</a></li>
+   <li><a id="contact-t" href="#contact">Contact</a></li>
+ </ul>
+ <!-- End - Main Menu -->
+</div>
+<div id="main" class="container">
+ <ul class="tabs-content">
+   <!--  Start - Home Tab -->
+   <li class="active" id="home">
+     <div id="header">
+       <div id="bannerHeader" class="columns seven ">
+         <div class="columns two profile alpha">
+           <!-- Start - Profile Image -->
+           <a href="#"> <img class="profie-image" alt="john doe" src="{$mybb->asset_url}/folio/images/headshot.png" width="100" height="100" /> </a>
+           <!-- End - Profile Image -->
+         </div>
+         <div class="columns four siteinfo">
+           <!-- Start - Siteinfo -->
+           <h1><a href="#">John Doe</a></h1>
+           <h3>Web Developer</h3>
+           <!-- End - Siteinfo -->
+         </div>
+       </div>
+       <div class="columns seven fright social">
+         <!-- Start - Social Icons -->
+         <ul>
+           <ul class="socialicons bw">
+             <li><a href="" class="twitter" target="_blank">twitter</a></li>
+             <li><a href="" class="linkedin" target="_blank">linkedin</a></li>
+             <li><a href="" class="dribble" target="_blank">dribble</a></li>
+             <li><a href="" class="github" target="_blank">github</a></li>
+             <li><a href="" class="stackoverflow" target="_blank">stackoverflow</a></li>
+           </ul>
+         </ul>
+         <!-- End - Social Icons -->
+       </div>
+     </div>
+     <!-- END - header -->
+     <div class="columns sixteen">
+       <div class="columns eight">
+         <div class="columns seven">
+           <!-- Start - Personal Statement -->
+           <h2>Personal Statement</h2>
+           <p>Web developer passionate about developing and optimizing websites for better user experience and search engine visibility.
+             Particularly interested in adapting content management systems for developing structured and scalable websites.</p>
+           <p>Focused on measurable results with effective project management. Interested in development of web applications, Ajax, and server side programming languages.
+             Skilled at development of web applications with consistency and portability.</p>
+           <!-- End - Personal Statement -->
+         </div>
+       </div>
+       <div class="recent-works columns eight">
+         <h2>Recent Works</h2>
+         <div class="flex-nav-container">
+           <div class="flexslider">
+             <!-- Start - Recent Works Slides -->
+             <ul class="slides">
+               <li> <img alt="website development" src="{$mybb->asset_url}/folio/slideshow-images/3.png" />
+                 <p class="flex-caption">Website development for client</p>
+               </li>
+               <li> <a href="#"><img alt="sample image" src="{$mybb->asset_url}/folio/slideshow-images/9.png" /></a>
+                 <p class="flex-caption">Illustration design for fictious Ltd.</p>
+               </li>
+               <li> <img alt="sample image" src="{$mybb->asset_url}/folio/slideshow-images/8.png" /> </li>
+               <li> <img alt="sample image" src="{$mybb->asset_url}/folio/slideshow-images/10.png" /> </li>
+             </ul>
+             <!-- End - Recent Works Slides -->
+           </div>
+         </div>
+       </div>
+     </div>
+   </li>
+   <!--  End - Home Tab -->
+   <!--  Start - Portfolio Tab  -->
+   <li id="portfolio">
+     <div class="columns sixteen">
+       <h2>Portfolio</h2>
+       <!-- Start - Category Filter -->
+       <div class="portfolio-content">
+         <dl class="group">
+           <dt>Filter &rarr;</dt>
+           <dd>
+             <ul class="filter group">
+               <li class="current all"><a href="#">All</a></li>
+               <li class="nature"><a href="#">Nature</a></li>
+               <li class="lifestyle"><a href="#">Lifestyle</a></li>
+               <li class="music"><a href="#">Music</a></li>
+               <li class="city"><a href="#">City</a></li>
+             </ul>
+           </dd>
+         </dl>
+         <!-- End - Category Filter -->
+         <!-- Start - Portfilio Images -->
+         <ul class="portfolio group">
+           <li class="item" data-id="id-1" data-type="nature">
+             <div> <img src="{$mybb->asset_url}/folio/portfolio-images/1_thumb.png" width="210" height="130" alt="Horse Riding" />
+               <div class="mask">
+                 <div class="item-title">Horse Riding</div>
+                 <div class="item-description">A thrilling horse riding experience near mountains.</div>
+                 <div><a class="launch" href="http://www.cnn.com">Visit Website</a></div>
+               </div>
+             </div>
+           </li>
+           <li class="item zoom-image" data-id="id-2" data-type="nature"> <a href="{$mybb->asset_url}/folio/portfolio-images/2.png" title="Scenic Beauty" rel="prettyPhoto"> <img src="{$mybb->asset_url}/folio/portfolio-images/2_thumb.png" width="210" height="130" alt="Scenic Beauty" /> </a> </li>
+           <li class="item zoom-image" data-id="id-3" data-type="nature"> <a href="{$mybb->asset_url}/folio/portfolio-images/3.png" title="Wood and Drums" rel="prettyPhoto"> <img src="{$mybb->asset_url}/folio/portfolio-images/3_thumb.png" width="210" height="130" alt="Wood and Drums" /> </a> </li>
+           <li class="item" data-id="id-4" data-type="nature"> <img src="{$mybb->asset_url}/folio/portfolio-images/4_thumb.png" width="210" height="130" alt="Scottwills Hydrant" />
+             <div class="mask">
+               <div class="item-title">Scottwills Hydrant</div>
+               <div class="item-description">Picture of Scottwills Hydrant</div>
+               <div><a class="launch" href="http://www.yahoo.com">Visit Website</a></div>
+             </div>
+           </li>
+           <li class="item zoom-image" data-id="id-5" data-type="city"> <a href="{$mybb->asset_url}/folio/portfolio-images/5.png" title="Firetruck" rel="prettyPhoto"> <img src="{$mybb->asset_url}/folio/portfolio-images/5_thumb.png" width="210" height="130" alt="Firetruck" /> </a> </li>
+           <li class="item zoom-image" data-id="id-6" data-type="city"> <a href="{$mybb->asset_url}/folio/portfolio-images/6.png" title="Crosswalk" rel="prettyPhoto"> <img src="{$mybb->asset_url}/folio/portfolio-images/6_thumb.png" width="210" height="130" alt="Crosswalk" /> </a> </li>
+           <li class="item" data-id="id-7" data-type="city"> <img src="{$mybb->asset_url}/folio/portfolio-images/7_thumb.png" width="210" height="130" alt="Cityscape" />
+             <div class="mask">
+               <div class="item-title">Cityscape</div>
+               <div class="item-description">Cityscapes and a beautiful view of the city</div>
+               <div><a class="launch" href="http://www.yahoo.com">Visit Website</a></div>
+             </div>
+           </li>
+           <li class="item" data-id="id-8" data-type="lifestyle"> <img src="{$mybb->asset_url}/folio/portfolio-images/8_thumb.png" width="210" height="130" alt="Crayons" />
+             <div class="mask">
+               <div class="item-title">Crayons</div>
+               <div class="item-description">Details of multi-color crayons</div>
+               <div><a class="launch" href="http://www.nytimes.com">Visit Website</a></div>
+             </div>
+           </li>
+           <li class="item" data-id="id-9" data-type="lifestyle">
+             <div> <img src="{$mybb->asset_url}/folio/portfolio-images/9_thumb.png" width="210" height="130" alt="Sunglasses" />
+               <div class="mask">
+                 <div class="item-title">Sunglasses</div>
+                 <div class="item-description">Picture of Sunglasses in grass</div>
+                 <div><a class="launch" href="http://www.google.com">Visit Website</a></div>
+               </div>
+             </div>
+           </li>
+           <li class="item" data-id="id-10" data-type="music">
+             <div> <img src="{$mybb->asset_url}/folio/portfolio-images/10_thumb.png" width="210" height="130" alt="Laptop" />
+               <div class="mask">
+                 <div class="item-title">Laptop</div>
+                 <div class="item-description">Picture of Laptop on a desk</div>
+                 <div><a class="launch" href="http://www.google.com">Visit Website</a></div>
+               </div>
+             </div>
+           </li>
+         </ul>
+         <!-- End - Portfolio Images -->
+       </div>
+     </div>
+   </li>
+   <!--  End - Portfolio Tab  -->
+   <!-- Start - Skills and Experience Tab -->
+   <li id="skills-experience">
+     <div class="columns sixteen">
+       <div class="columns seven"> <!--  Start - Professional Experience -->
+         <h2>Professional Experience</h2>
+         <!--  Start - Job 1 -->
+         <div class="row job">
+           <h3>Web Development Engineer <span class="dates">Mar 2010 - Jun 2011</span></h3>
+           <h4>Fictious Technologies, Inc.</h4>
+           <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Qui dolorem ipsum quia dolor sit amet, consectetur in.</p>
+           <ul class="circle">
+             <li>Developed landing pages to showcase student profiles.</li>
+             <li>SEO audit for optimizing content hierarchy and metadata.</li>
+             <li>Sed quia non numquam eius modi</li>
+           </ul>
+         </div>
+         <!--  End - Job 1 -->
+         <!--  Start - Job 2 -->
+         <div class="row job">
+           <h3>Junior Web Developer <span class="dates">2010 - 2011</span></h3>
+           <h4>Myranix Tech Ltd.</h4>
+           <p>Responsible for development and maintenance of the business department website.The role included re-creating static web pages and moving content from the previous design to the new implementation.</p>
+           <ul class="circle">
+             <li>Website structure and content optimization for multiple client websites.</li>
+             <li>Developed a website for student interaction and promotional use.</li>
+             <li>Sed quia non numquam eius modi</li>
+           </ul>
+         </div>
+         <!--  End - Job 2 -->
+       </div>
+       <!--  End - Professional Experience -->
+       <!--  Start - Skills Section -->
+       <div class="columns seven row">
+         <h2>Skills</h2>
+         <div id="skills">
+           <ul>
+             <li>
+               <h3>JavaScript <span class="rating five"></span></h3>
+               <div>Prototype, jQuery, DOM Manipulation</div>
+             </li>
+             <li>
+               <h3>CSS3 <span class="rating four"></span></h3>
+               <div>CSS preprecessors, Animations</div>
+             </li>
+             <li>
+               <h3>Drupal <span class="rating three"></span></h3>
+               <div>Theming, Module Development</div>
+             </li>
+             <li>
+               <h3>WordPress <span class="rating five"></span></h3>
+               <div>Theme Customization, Plugin Development</div>
+             </li>
+           </ul>
+         </div>
+         <div class="top-vertical-spacing">
+           <blockquote>Nam pharetra mollis erat quis pulvinar. Donec ut metus in libero elementum pulvinar vitae quis sapien. Proin nec diam purus, at imperdiet diam. Vivamus auctor, purus et vestibulum ullamcorper, tellus dolor iaculis risus, eu interdum urna est at tortor.</blockquote>
+           <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis, purus ac pharetra dapibus, lacus leo accumsan risus, id faucibus augue nisi vitae mi.</blockquote>
+         </div>
+       </div>
+       <!--  End - Skills Section -->
+     </div>
+   </li>
+   <!-- End - Skills and Experience Tab -->
+   <li id="contact">
+     <div class="columns sixteen">
+       <div class="columns seven">
+         <!-- Start - Contact Info -->
+         <h2>Contact Info</h2>
+         <div class="columns six">
+           <p>Donec ut metus in libero elementum pulvinar vitae quis sapien. Proin nec diam purus, at imperdiet diam. Vivamus auctor, purus et</p>
+           <ul class="contact-details">
+             <li>
+               <ul>
+                 <li class="contact-type">Email</li>
+                 <li><a class="link" href="mailto:inbox@gellarsite.me">inbox@johndoe.me</a></li>
+               </ul>
+             </li>
+             <li>
+               <ul>
+                 <li class="contact-type">Phone</li>
+                 <li>(937)-187-1145</li>
+               </ul>
+             </li>
+             <li>
+               <ul>
+                 <li class="contact-type">Fax</li>
+                 <li>(937)-587-9045</li>
+               </ul>
+             </li>
+             <li>
+               <ul>
+                 <li class="contact-type">Address</li>
+                 <li>
+                   <address>
+                   Mountain View Caltrain, <br>
+                   West Evelyn Avenue,<br>
+                   Mountain View, CA<br>
+                   45324
+                   </address>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+       </div>
+       <!-- End - Contact Info -->
+       <div class="columns eight">
+         <!-- Start - Contact Form -->
+         <h2>Get in Touch</h2>
+         <div class="mail">
+           <div id="response"></div>
+           <div id="contactformDIV">
+             <script>
+              $.get('folio/contact/contactform.php', function(data) {
+              $("#contactformDIV").html(data);
+               });
+             </script>
+           </div>
+         </div>
+       </div>
+     </div>
+   </li>
+   <!--  END - Contact Tab -->
+ </ul>
+</div>
+<!-- END - Container -->
+<br />
+<span class="smalltext">Portfolio by:  <a href="http://community.mybb.com/user-6029.html" target="_blank">Vintagedaddyo</a> </span>
+<!--  Scripts
+      ================================================== -->
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/main.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/folio/js/script.js"></script>
+<!-- End Document
+================================================== -->
+{$footer}
+</body>
+</html>
